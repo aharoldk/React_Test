@@ -9,6 +9,9 @@ export default class Form extends React.Component {
         const tinggi = event.target.Tinggi.value;
         const berat = event.target.Berat.value;
 
+        event.target.Nama.value = '';
+        event.target.Tinggi.value = '';
+        event.target.Berat.value = '';
 
         console.log(nama+", "+tinggi+", "+berat);
         this.props.saveData(nama, tinggi, berat);
